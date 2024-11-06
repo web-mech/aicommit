@@ -27,7 +27,7 @@ def generate_commit_message(diff):
     """Generate a commit message using OpenAI API."""
     try:
         response = client.chat.completions.create(
-            model="gpt-3.5-turbo",
+            model="gpt-4o",
             messages=[
                 {"role": "system", "content": "You are a helpful assistant for generating commit messages."},
                 {"role": "user", "content": f"Generate a Conventional Commit message for the following changes. "
