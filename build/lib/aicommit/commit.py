@@ -35,7 +35,7 @@ def generate_commit_message(diff):
             ],
             max_tokens=120
         )
-        return response.choices[0].message['content'].strip()
+        return response.choices[0].message.content.strip()
     except Exception as e:
         print(f"Error generating commit message: {e}")
         return "chore: update"
