@@ -47,7 +47,7 @@ def commit_changes(files):
         if diff:
             commit_message = generate_commit_message(diff)
             try:
-                subprocess.run(['git', 'add', file], check=True)
+                subprocess.run(['git', 'add', '-f',file], check=True)
                 subprocess.run(['git', 'commit', '-m', commit_message], check=True)
                 print(f"Committed {file} with message: {commit_message}")
             except subprocess.CalledProcessError as e:

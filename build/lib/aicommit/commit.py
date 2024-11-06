@@ -1,9 +1,11 @@
 import subprocess
-import openai
 import os
+from openai import OpenAI
 
-# Set your OpenAI API key
-openai.api_key = os.getenv("OPENAI_API_KEY")
+# Initialize the OpenAI client
+client = OpenAI(
+    api_key=os.environ.get("OPENAI_API_KEY")
+)
 
 def get_diffed_files():
     """Get the list of files with changes."""
@@ -24,7 +26,7 @@ def get_file_diff(file_path):
 def generate_commit_message(diff):
     """Generate a commit message using OpenAI API."""
     try:
-        response = openai.ChatCompletion.create(
+        response = client.chat.completions.create(
             model="gpt-3.5-turbo",
             messages=[
                 {"role": "system", "content": "You are a helpful assistant for generating commit messages."},
