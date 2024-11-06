@@ -1,0 +1,10 @@
+README.md
+setup.py
+aicommit/__init__.py
+aicommit/commit.py
+aicommit.egg-info/PKG-INFO
+aicommit.egg-info/SOURCES.txt
+aicommit.egg-info/dependency_links.txt
+aicommit.egg-info/entry_points.txt
+aicommit.egg-info/requires.txt
+aicommit.egg-info/top_level.txt

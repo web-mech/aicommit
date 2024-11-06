@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: aicommit
+Version: 0.1.0
+Summary: A tool to generate commit messages using OpenAI
+Home-page: https://github.com/web-mech/aicommit
+Author: Webmech
+Author-email: mike@pricelove.co
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: openai
+Requires-Dist: python-dotenv
+Requires-Dist: gitpython
+
+  # aicommit
+
+   A tool to generate commit messages using OpenAI.
+
+## Installation
+
+```bash
+pip install aicommit
+```
+
+
+## Usage
+
+```bash
+aicommit
+```
+
+   ```
+
+5. **Install the Package:**
+
+Navigate to the directory containing `setup.py` and run:
+
+```bash
+pip install aicommit
+```
