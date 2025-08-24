@@ -1,8 +1,12 @@
 from setuptools import setup, find_packages
+try:
+    from aicommit import __version__ as package_version
+except Exception:
+    package_version = "0.0.0"
 
 setup(
     name='aicommit',
-    version='0.1.0',
+    version=package_version,
     packages=find_packages(),
     install_requires=[
         'openai',
